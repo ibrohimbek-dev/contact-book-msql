@@ -25,5 +25,5 @@ This project is a Contact Book application built with Node.js, Express, and MySQ
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/contact-backend-msql.git
+   https://github.com/ibrohimbek-dev/contact-book-msql.git
    cd contact-backend-msql
