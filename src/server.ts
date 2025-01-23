@@ -15,9 +15,9 @@ const startServer = async () => {
 
 		server.listen(PORT, () => {
 			console.info(`Server is running on port => ${PORT}`);
-			console.info(`Admin project on http://localhost:${PORT}/ \n`);
+			console.info(`Contact project on local http://localhost:${PORT}/ \n`);
 			console.info(
-				`Admin project on http://${process.env.SERVER_HOST}:${process.env.SERVER_PORT}/ \n`
+				`Contact project on server http://${process.env.SERVER_HOST}:${process.env.SERVER_PORT}/ \n`
 			);
 		});
 	} catch (error) {
