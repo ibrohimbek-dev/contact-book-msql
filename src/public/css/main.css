@@ -1,0 +1,11 @@
+.main-container {
+	width: 99%;
+	height: 100%;
+	
+}
+
+@media (min-width: 992px) {
+	.main-container {
+		max-width: 1400px;				
+	}
+}

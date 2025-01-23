@@ -1,0 +1,30 @@
+version: "3.4"
+
+services:
+  contact-backend:
+    container_name: contact-backend
+    restart: always
+    image: node:20.15.0
+    ports:
+      - 8001:5005
+    volumes:
+      - ./:/usr/src/contact-backend
+    working_dir: /usr/src/contact-backend
+    networks:
+      - monorepo-network
+
+    # FOR PRODUCTION
+    command: bash -c "npm install && npm run build && npm run start:prod"
+
+networks:
+  monorepo-network:
+    driver: bridge
+
+
+#
+# -----------------------------
+# docker compose up -d
+# docker compose start
+# docker compose stop
+# docker compose restart
+# docker compose stop && docker compose rm -f
